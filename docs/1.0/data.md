@@ -54,7 +54,7 @@ class torch.utils.data.DataLoader(dataset, batch_size=1, shuffle=False, sampler=
 *   **num_workers**([_int_](https://docs.python.org/3/library/functions.html#int "(in Python v3.7)")_,_ _可选_) – 加载数据的子进程数量。0表示主进程加载数据(默认：`0`）。
 *   **collate_fn**(_可调用_ _,_ _可选_）– 归并样例列表来组成小批。
 *   **pin_memory**([_bool_](https://docs.python.org/3/library/functions.html#bool "(in Python v3.7)")_,_ _可选_）– 如果设置为`True`，数据加载器会在返回前将张量拷贝到CUDA锁页内存。
-*   **drop_last**([_bool_](https://docs.python.org/3/library/functions.html#bool "(in Python v3.7)")_,_ _可选_）– 如果数据集的大小不能不能被批大小整除，该选项设为`True`后不会把最后的残缺批作为输入；如果设置为`False`，最后一个批将会稍微小一点。(默认：`False`）
+*   **drop_last**([_bool_](https://docs.python.org/3/library/functions.html#bool "(in Python v3.7)")_,_ _可选_）– 如果数据集的大小不能被批大小整除，该选项设为`True`后不会把最后的残缺批作为输入；如果设置为`False`，最后一个批将会稍微小一点。(默认：`False`）
 *   **timeout**(_数值_ _,_ _可选_） – 如果是正数，即为收集一个批数据的时间限制。必须非负。(默认：`0`）
 *   **worker_init_fn**(_可调用_ _,_ _可选_）– 如果不是`None`，每个worker子进程都会使用worker id(在`[0, num_workers - 1]`内的整数）进行调用作为输入，这一过程发生在设置种子之后、加载数据之前。(默认：`None`）
 
