@@ -474,7 +474,6 @@ register_forward_pre_hook(hook)
 
 
 此钩子函数在每次模块的 [`forward()`](#torch.nn.Module.forward "torch.nn.Module.forward")函数运行开始之前会被触发。此钩子函数需要遵从以下函数签名：
-The hook will be called every time before [`forward()`](#torch.nn.Module.forward "torch.nn.Module.forward") is invoked. It should have the following signature:
 
 ```py
 hook(module, input) -> None
